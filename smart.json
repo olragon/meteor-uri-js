@@ -1,5 +1,5 @@
 {
-  "name": "URI.js",
+  "name": "uri-js",
   "description": "URI.js repackaged for Meteor",
   "homepage": "https://github.com/olragon/meteor-uri-js",
   "author": "Long Nguyen <olragon@gmail.com> (http://cun.vn)",
