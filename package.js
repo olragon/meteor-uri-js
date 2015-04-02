@@ -10,9 +10,15 @@ Package.on_use(function (api, where) {
   if (api.versionsFrom) {
     api.versionsFrom('0.9.0');
   }
-  
+
   where = where || ['client', 'server'];
 
   api.add_files('lib/uri.js/src/URI.js', 'server');
   api.add_files('lib/uri.js/src/URI.js', 'client');
+});
+
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('olragon:uri-js');
+  api.addFiles('olragon_uri-js-tests.js');
 });
